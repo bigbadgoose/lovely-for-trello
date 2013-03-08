@@ -1,0 +1,221 @@
+html body, html input, html select, html textarea {
+  font-size: 12px;
+}
+
+body #board {
+  background: rgba(22, 75, 105, .1);
+  background: #eee;
+  -webkit-border-radius: 0;
+  -webkit-box-shadow: none !important;
+}
+
+body .list {
+  border: none;
+  background: none;
+  -webkit-border-radius: 0;
+  margin-top: 1px;
+}
+
+body .list-gradient-top, body .list-gradient-bottom {
+  display: none;
+}
+
+body .list-cards {
+  min-height: 60px;
+}
+
+body .list-card {
+  border: none;
+  margin: 0;
+  margin-bottom: 1px;
+  padding: 7px;
+  min-height: 40px;
+  -webkit-border-radius: 0;
+  -webkit-box-shadow: 0 -1px 0 #ccc, 0 1px 0 #ccc;
+  -webkit-box-shadow: 0 0 0 #000;
+}
+body .list-card .list-card-title {
+  color: #666;
+  margin-bottom: 13px;
+}
+
+body .list-card.active-card {
+  -webkit-box-shadow: 0 0 0 1px #444;
+  z-index: 5;
+}
+body .list-card.active-card .list-card-title {
+  color: #000;
+}
+body .list-card .card-labels {
+  margin: 0px 0 -2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body .list-card .card-labels .card-label {
+  height: 2px;
+}
+
+body .open-card-composer {
+  color: #666;
+}
+body .open-card-composer:hover {
+  color: #933;
+  background: none;
+}
+
+body .list-card.green-label {
+  background: rgba(52, 178, 125, .1);
+}
+body .list-card.yellow-label {
+  background: #ffe;
+}
+body .list-card.orange-label {
+  background: rgba(224, 153, 82, .1)
+}
+body .list-card.red-label {
+  background: rgba(203, 77, 77, .2)
+}
+body .list-card.red-label .list-card-title {
+  color: #900;
+}
+body .list-card.purple-label {
+  background: rgba(153, 51, 204, .1)
+}
+body .list-card.blue-label {
+  background: rgba(77, 119, 203, .1)
+}
+
+body .list-card-members {
+  margin: -15px -5px 0px 0;
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+}
+body .member {
+  height: 20px;
+  width: 20px;
+}
+body .member .member-avatar,
+body .member .member-initials {
+  height: 20px;
+  width: 20px;
+}
+
+body .fancy-scrollbar::-webkit-scrollbar {
+  height: 9px;
+  width: 6px;
+}
+
+body .list-card:hover .badges .badge.due-soon .badge-text,
+body .list-card:hover .badges .badge.due-past .badge-text {
+  color: #fff;
+}
+body .list-card:hover .badges .badge-text {
+  color: #000;
+}
+
+body .list-card:hover .badges .badge .app-icon {
+  opacity: 1;
+}
+
+body .list-card .card-operation {
+  padding: 2px;
+}
+
+body .badges {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  padding: 0;
+}
+
+body .badge {
+  margin: 0 1px 0 0;
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border: none;
+  background: rgba(255,255,255,.2);
+  color: #900;
+}
+
+body .badge .app-icon {
+  opacity: .5;
+}
+
+body .window-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body .window-wrapper {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 1px solid #000;
+}
+
+body .window {
+  width: 90%;
+}
+body .window * {
+  box-sizing: border-box;
+}
+body .window-main-col {
+  width: 80%;
+}
+body.fixed-content .window-main-col {
+  width: 73% !important;
+}
+body .member-detail-modal .window-main-col {
+  width: 70%;
+}
+body .window-sidebar {
+  width: 18%;
+}
+body .window-sidebar .button-link {
+  height: 33px;
+}
+
+body .window-title-text {
+  color: #900;
+}
+
+body .board-side-btn {
+  z-index: 1;
+}
+.board-side-btn .arrow {
+  top: 5px;
+}
+
+body .gutter.float-cards {
+  margin: 0;
+}
+
+body .card-detail-desc {
+  font-family: 'andale mono','lucida console',monospace;
+  font-size: 12px;  
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+}
+body .card-detail-desc .current {
+  margin-bottom: 20px;
+}
+body .window-main-col .edit textarea.field {
+  font-family: 'andale mono','lucida console',monospace;
+  font-size: 12px;
+}
+body .card-detail-desc blockquote {
+  background: #dfe;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ced;
+  color: black;
+}
+
+body .window-module.card-label-list .card-labels .card-label {
+  height: 26px;
+}
