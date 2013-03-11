@@ -215,6 +215,10 @@ body .card-detail-desc blockquote {
   border: 1px solid #ced;
   color: black;
 }
+body .card-detail-desc .current > blockquote:first-child {
+  margin-bottom: 20px;
+}
+
 
 body .window-module.card-label-list .card-labels .card-label {
   height: 26px;

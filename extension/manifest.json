@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Lovely for Trello",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "icons": {
     "128": "trello-lovely-128.png",
     "48": "trello-lovely-48.png"
