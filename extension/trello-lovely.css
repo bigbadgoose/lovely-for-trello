@@ -2,9 +2,11 @@ html body, html input, html select, html textarea {
   font-size: 12px;
 }
 
+body .board-canvas {
+  background: none;
+}
+
 body #board {
-  background: rgba(22, 75, 105, .1);
-  background: #eee;
   -webkit-border-radius: 0;
   -webkit-box-shadow: none !important;
 }
@@ -14,6 +16,11 @@ body .list {
   background: none;
   -webkit-border-radius: 0;
   margin-top: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body.custom-board-background .board-canvas .list {
+  background: none;
 }
 
 body .list-gradient-top, body .list-gradient-bottom {
@@ -21,7 +28,7 @@ body .list-gradient-top, body .list-gradient-bottom {
 }
 
 body .list-cards {
-  min-height: 60px;
+  min-height: 0;
 }
 
 body .list-card {
@@ -64,11 +71,36 @@ body .list-card .card-labels .card-label {
 }
 
 body .open-card-composer {
-  color: #666;
+  display: inline-block;
+  background: #f90;
+  border-radius: 0;
+  padding: .3em 1em;
+  margin-left: 2px;
+  margin-top: -1px;
+  font-size: .85em;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all .15s ease-in;
+  -webkit-transition: all .15s ease-in;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 body .open-card-composer:hover {
-  color: #933;
-  background: none;
+  background: #fa0;
+  color: #fff;
+  text-decoration: none;
+}
+
+body .list-title {
+  margin-left: 2px;
+}
+body .list-title h2 {
+  color: #FFF;
+  text-shadow: 0 1px 2px #000;
+  background: rgba(0,0,0,.7);
+  padding: .5em .2em;
+  text-transform: uppercase;
 }
 
 body .list-card.green-label {
@@ -168,6 +200,14 @@ body .window {
 body .window * {
   box-sizing: border-box;
 }
+
+body .button-link {
+  box-sizing: content-box;
+}
+body .button-link * {
+  box-sizing: content-box;
+}
+
 body .window-main-col {
   width: 80%;
 }
@@ -223,6 +263,13 @@ body .card-detail-desc blockquote {
 }
 body .card-detail-desc .current > blockquote:first-child {
   margin-bottom: 20px;
+}
+body .card-detail-desc pre {
+  white-space: pre-wrap;
+  background: #fafafa;
+}
+body .card-detail-desc pre code {
+  background: #fafafa;
 }
 
 
